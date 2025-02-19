@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Paulo\\Documents\\GitHub\\Sistema-Busca-Vetorial\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC7B7F7-2E56-47B4-8687-8565414EABD8}|Sistema-Busca-Vetorial.csproj|c:\\users\\paulo\\documents\\github\\sistema-busca-vetorial\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8BC7B7F7-2E56-47B4-8687-8565414EABD8}|Sistema-Busca-Vetorial.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC7B7F7-2E56-47B4-8687-8565414EABD8}|Sistema-Busca-Vetorial.csproj|c:\\users\\paulo\\documents\\github\\sistema-busca-vetorial\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC7B7F7-2E56-47B4-8687-8565414EABD8}|Sistema-Busca-Vetorial.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC7B7F7-2E56-47B4-8687-8565414EABD8}|Sistema-Busca-Vetorial.csproj|c:\\users\\paulo\\documents\\github\\sistema-busca-vetorial\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BC7B7F7-2E56-47B4-8687-8565414EABD8}|Sistema-Busca-Vetorial.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BC7B7F7-2E56-47B4-8687-8565414EABD8}|Sistema-Busca-Vetorial.csproj|c:\\users\\paulo\\documents\\github\\sistema-busca-vetorial\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{8BC7B7F7-2E56-47B4-8687-8565414EABD8}|Sistema-Busca-Vetorial.csproj|solutionrelative:form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Paulo\\Documents\\GitHub\\Sistema-Busca-Vetorial\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Paulo\\Documents\\GitHub\\Sistema-Busca-Vetorial\\Form1.cs*",
+              "RelativeToolTip": "Form1.cs*",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T02:02:44.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.resx",
+              "DocumentMoniker": "C:\\Users\\Paulo\\Documents\\GitHub\\Sistema-Busca-Vetorial\\Form1.resx",
+              "RelativeDocumentMoniker": "Form1.resx",
+              "ToolTip": "C:\\Users\\Paulo\\Documents\\GitHub\\Sistema-Busca-Vetorial\\Form1.resx*",
+              "RelativeToolTip": "Form1.resx*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-02-19T02:02:40.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Paulo\\Documents\\GitHub\\Sistema-Busca-Vetorial\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Paulo\\Documents\\GitHub\\Sistema-Busca-Vetorial\\Form1.Designer.cs*",
+              "RelativeToolTip": "Form1.Designer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T02:02:39.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Paulo\\Documents\\GitHub\\Sistema-Busca-Vetorial\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Paulo\\Documents\\GitHub\\Sistema-Busca-Vetorial\\Form1.cs [Design]*",
+              "RelativeToolTip": "Form1.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T02:02:21.918Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
