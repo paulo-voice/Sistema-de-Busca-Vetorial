@@ -46,7 +46,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Location = new System.Drawing.Point(841, 9);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
@@ -60,7 +60,7 @@
             // txtBuscar
             // 
             this.txtBuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtBuscar.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.txtBuscar.BackColor = System.Drawing.Color.LightSlateGray;
             this.txtBuscar.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtBuscar.Location = new System.Drawing.Point(51, 10);
@@ -73,7 +73,7 @@
             // 
             // lblDetalhamento
             // 
-            this.lblDetalhamento.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.lblDetalhamento.BackColor = System.Drawing.Color.LightSlateGray;
             this.lblDetalhamento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDetalhamento.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblDetalhamento.Location = new System.Drawing.Point(400, 442);
@@ -83,7 +83,7 @@
             // 
             // lstSugestoes
             // 
-            this.lstSugestoes.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.lstSugestoes.BackColor = System.Drawing.Color.LightSlateGray;
             this.lstSugestoes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstSugestoes.FormattingEnabled = true;
             this.lstSugestoes.Location = new System.Drawing.Point(51, 443);
@@ -96,18 +96,19 @@
             this.lblLista.AutoSize = true;
             this.lblLista.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblLista.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblLista.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLista.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLista.ForeColor = System.Drawing.SystemColors.Desktop;
             this.lblLista.Location = new System.Drawing.Point(50, 64);
             this.lblLista.Margin = new System.Windows.Forms.Padding(3);
             this.lblLista.Name = "lblLista";
             this.lblLista.Padding = new System.Windows.Forms.Padding(3, 2, 3, 1);
-            this.lblLista.Size = new System.Drawing.Size(119, 22);
+            this.lblLista.Size = new System.Drawing.Size(105, 22);
             this.lblLista.TabIndex = 5;
             this.lblLista.Text = "Lista De Items";
             // 
             // lstItems
             // 
-            this.lstItems.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.lstItems.BackColor = System.Drawing.Color.LightSlateGray;
             this.lstItems.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lstItems.FormattingEnabled = true;
             this.lstItems.Location = new System.Drawing.Point(51, 93);
@@ -118,7 +119,7 @@
             // 
             // pbImagemProduto
             // 
-            this.pbImagemProduto.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.pbImagemProduto.BackColor = System.Drawing.Color.LightSlateGray;
             this.pbImagemProduto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pbImagemProduto.Location = new System.Drawing.Point(540, 92);
             this.pbImagemProduto.Name = "pbImagemProduto";
@@ -133,11 +134,12 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.Location = new System.Drawing.Point(50, 417);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 1);
-            this.label1.Size = new System.Drawing.Size(157, 22);
+            this.label1.Size = new System.Drawing.Size(139, 22);
             this.label1.TabIndex = 5;
             this.label1.Text = "Lista De Sugestões";
             // 
@@ -146,11 +148,12 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label2.Location = new System.Drawing.Point(400, 417);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 1);
-            this.label2.Size = new System.Drawing.Size(88, 22);
+            this.label2.Size = new System.Drawing.Size(79, 22);
             this.label2.TabIndex = 5;
             this.label2.Text = "Descrição";
             // 
@@ -159,12 +162,13 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label3.Location = new System.Drawing.Point(540, 64);
             this.label3.Margin = new System.Windows.Forms.Padding(3);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 1);
-            this.label3.Size = new System.Drawing.Size(71, 22);
+            this.label3.Size = new System.Drawing.Size(65, 22);
             this.label3.TabIndex = 8;
             this.label3.Text = "Imagem";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -174,7 +178,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.LightSalmon;
+            this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(1007, 577);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

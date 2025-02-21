@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Sistema_Busca_Vetorial.Core;
 using System.Drawing;
 
+// Integrantes: Paulo Vinicius Ruffini Azevedo e Caio Corrêa Castro
 namespace Sistema_Busca_Vetorial.Core
 {
     public class Loja
@@ -19,6 +20,7 @@ namespace Sistema_Busca_Vetorial.Core
             Produtos = new List<Produto>();
         }
 
+        // metodo para carregar produtos a partir de um arquivo de texto
         public void CarregarProdutos(string caminhoArquivo)
         {
             if (!File.Exists(caminhoArquivo))
@@ -28,7 +30,7 @@ namespace Sistema_Busca_Vetorial.Core
             string[] linhas = File.ReadAllLines(caminhoArquivo);
             Produto produtoAtual = null;
 
-            // Diretório onde o executável está rodando
+            // diretorio onde as imagens estao armazenadas dentro da pasta do executavel
             string pastaImagens = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Imagens");
 
             foreach (string linha in linhas)
@@ -50,21 +52,21 @@ namespace Sistema_Busca_Vetorial.Core
                     string precoStr = linha.Substring("Preço: R$ ".Length).Trim();
                     produtoAtual.Preco = decimal.Parse(precoStr);
 
-                    // Nome da imagem correspondente ao produto
+                    // nome do arquivo de imagem baseado no nome do produto
                     string nomeArquivoImagem = produtoAtual.Nome + ".png";
                     string caminhoImagem = Path.Combine(pastaImagens, nomeArquivoImagem);
 
-                    // Se a imagem existir, atribuir o caminho, senão deixar nulo
+                    // verifica se a imagem existe, se nao, deixa o caminho nulo
                     produtoAtual.CaminhoImagem = File.Exists(caminhoImagem) ? caminhoImagem : null;
 
                     Produtos.Add(produtoAtual);
                 }
             }
-
+            // calcula os vetores TF-IDF para cada produto carregado
             CalcularVetoresTFIDF();
         }
 
-
+        // metodo para calcular os vetores TF-IDF de cada produto na loja
         private void CalcularVetoresTFIDF()
         {
             var todosDocumentos = Produtos
@@ -75,6 +77,7 @@ namespace Sistema_Busca_Vetorial.Core
                 ))
                 .ToList();
 
+            // calcula o IDF para todas as palavras dos produtos
             IDF = TFIDF.CalcularIDF(todosDocumentos);
 
             foreach (var produto in Produtos)
@@ -89,6 +92,7 @@ namespace Sistema_Busca_Vetorial.Core
             }
         }
 
+        // metodo para buscar produtos utilizando similaridade vetorial
         public List<Produto> BuscarProdutosVetorial(string consulta)
         {
             var tokensConsulta = TextoHelper.AplicarStemming(
@@ -100,18 +104,21 @@ namespace Sistema_Busca_Vetorial.Core
 
             var resultados = new List<(Produto Produto, double Similaridade)>();
 
+            // calcula a similaridade cosseno entre a consulta e os produtos
             foreach (var produto in Produtos)
             {
                 double similaridade = CalcularSimilaridadeCosseno(vetorConsulta, produto.VetorTFIDF);
                 resultados.Add((produto, similaridade));
             }
 
+            // ordena os produtos pelo nivel de similaridade e retorna a lista ordenada
             return resultados
                 .OrderByDescending(r => r.Similaridade)
                 .Select(r => r.Produto)
                 .ToList();
         }
 
+        // metodo para calcular a similaridade cosseno entre dois vetores TF-IDF
         private double CalcularSimilaridadeCosseno(Dictionary<string, double> vetor1, Dictionary<string, double> vetor2)
         {
             var palavrasComuns = vetor1.Keys.Intersect(vetor2.Keys);
@@ -126,6 +133,7 @@ namespace Sistema_Busca_Vetorial.Core
             return produtoEscalar / (norma1 * norma2);
         }
 
+        // metodo para sugerir itens semelhantes a um produto de referencia
         public List<Produto> SugerirItensSemelhantes(Produto produtoReferencia, int quantidade = 3)
         {
             var resultados = new List<(Produto Produto, double Similaridade)>();
@@ -138,6 +146,7 @@ namespace Sistema_Busca_Vetorial.Core
                 resultados.Add((produto, similaridade));
             }
 
+            // ordena os produtos mais semelhantes e retorna os mais proximos
             return resultados
                 .OrderByDescending(r => r.Similaridade)
                 .Take(quantidade)

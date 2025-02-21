@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// Integrantes: Paulo Vinicius Ruffini Azevedo e Caio Corrêa Castro
 namespace Sistema_Busca_Vetorial
 {
     static class Program
