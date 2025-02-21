@@ -13,6 +13,7 @@ namespace Sistema_Busca_Vetorial.Core
         public string Descricao { get; set; }
         public string TamanhosDisponiveis { get; set; }
         public decimal Preco { get; set; }
+        public string CaminhoImagem { get; set; }
         public Dictionary<string, double> VetorTFIDF { get; set; }
 
         public Produto()

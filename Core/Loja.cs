@@ -5,6 +5,7 @@ using System.Text;
 using System.IO;
 using System.Threading.Tasks;
 using Sistema_Busca_Vetorial.Core;
+using System.Drawing;
 
 namespace Sistema_Busca_Vetorial.Core
 {
@@ -21,35 +22,48 @@ namespace Sistema_Busca_Vetorial.Core
         public void CarregarProdutos(string caminhoArquivo)
         {
             if (!File.Exists(caminhoArquivo))
-                throw new FileNotFoundException("Arquivo de produtos não encontrado.");
+                throw new FileNotFoundException($"Arquivo de produtos não encontrado: {caminhoArquivo}");
 
             Produtos.Clear();
             string[] linhas = File.ReadAllLines(caminhoArquivo);
             Produto produtoAtual = null;
 
+            // Diretório onde o executável está rodando
+            string pastaImagens = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Imagens");
+
             foreach (string linha in linhas)
             {
                 if (linha.StartsWith("Nome:"))
                 {
-                    produtoAtual = new Produto { Nome = linha.Substring("Nome: ".Length) };
+                    produtoAtual = new Produto { Nome = linha.Substring("Nome: ".Length).Trim() };
                 }
                 else if (linha.StartsWith("Descrição:"))
                 {
-                    produtoAtual.Descricao = linha.Substring("Descrição: ".Length);
+                    produtoAtual.Descricao = linha.Substring("Descrição: ".Length).Trim();
                 }
                 else if (linha.StartsWith("Tamanhos disponíveis:"))
                 {
-                    produtoAtual.TamanhosDisponiveis = linha.Substring("Tamanhos disponíveis: ".Length);
+                    produtoAtual.TamanhosDisponiveis = linha.Substring("Tamanhos disponíveis: ".Length).Trim();
                 }
                 else if (linha.StartsWith("Preço:"))
                 {
-                    string precoStr = linha.Substring("Preço: R$ ".Length);
+                    string precoStr = linha.Substring("Preço: R$ ".Length).Trim();
                     produtoAtual.Preco = decimal.Parse(precoStr);
+
+                    // Nome da imagem correspondente ao produto
+                    string nomeArquivoImagem = produtoAtual.Nome + ".png";
+                    string caminhoImagem = Path.Combine(pastaImagens, nomeArquivoImagem);
+
+                    // Se a imagem existir, atribuir o caminho, senão deixar nulo
+                    produtoAtual.CaminhoImagem = File.Exists(caminhoImagem) ? caminhoImagem : null;
+
                     Produtos.Add(produtoAtual);
                 }
             }
+
             CalcularVetoresTFIDF();
         }
+
 
         private void CalcularVetoresTFIDF()
         {
