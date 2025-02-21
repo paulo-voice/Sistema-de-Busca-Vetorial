@@ -1,18 +1,21 @@
 # Sistema de Busca Vetorial
 
-## 📌 Sobre o Projeto
+## Sobre o Projeto
 Este sistema permite buscar produtos utilizando um modelo de busca vetorial, baseado no cálculo de similaridade de textos (TF-IDF).
 
-## 🚀 Como Usar
-1. Abra o aplicativo.
-2. Digite um termo de busca no campo de pesquisa.
+## Como Usar
+1. Coloque na mesma pasta os seguintes itens:
+  - Arquivo executável: Sistema-Busca-Vetorial.exe
+  - Arquivo que contém os produtos da loja: produtos.txt
+  - Pasta de Imagens dos produtos.
+2. Após abrir o executável, digite um termo de busca no campo de pesquisa.
 3. Clique no botão de busca.
-4. Os produtos mais relevantes aparecerão na lista.
+4. Os produtos mais relevantes aparecerão ordenados em uma lista.
 5. Clique em um produto para ver os detalhes e sugestões de itens semelhantes.
 
-## 🛠 Exemplo de Funcionamento
-- Termo de busca: "tênis esportivo"
+## Exemplo de Funcionamento
+- Termo de busca: "Jeans"
 - Retorno esperado:
-  - "Tênis de corrida XYZ"
-  - "Tênis esportivo leve"
-  - "Tênis casual para academia"
+  - "Calça Jeans Azul Claro"
+  - "Calça Jeans Preta"
+  - "Bermuda Jeans Azul Claro"
