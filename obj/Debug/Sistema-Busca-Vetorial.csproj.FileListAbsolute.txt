@@ -8,3 +8,13 @@ C:\Users\Paulo\Documents\GitHub\Sistema-Busca-Vetorial\bin\Debug\Sistema-Busca-V
 C:\Users\Paulo\Documents\GitHub\Sistema-Busca-Vetorial\obj\Debug\Sistema-Busca-Vetorial.exe
 C:\Users\Paulo\Documents\GitHub\Sistema-Busca-Vetorial\obj\Debug\Sistema-Busca-Vetorial.pdb
 C:\Users\Paulo\Documents\GitHub\Sistema-Busca-Vetorial\obj\Debug\Sistema_Busca_Vetorial.Form1.resources
+C:\Users\Paulo\Documents\GitHub\Sistema-de-Busca-Vetorial\bin\Debug\Sistema-Busca-Vetorial.exe.config
+C:\Users\Paulo\Documents\GitHub\Sistema-de-Busca-Vetorial\bin\Debug\Sistema-Busca-Vetorial.exe
+C:\Users\Paulo\Documents\GitHub\Sistema-de-Busca-Vetorial\bin\Debug\Sistema-Busca-Vetorial.pdb
+C:\Users\Paulo\Documents\GitHub\Sistema-de-Busca-Vetorial\obj\Debug\Sistema-Busca-Vetorial.csproj.AssemblyReference.cache
+C:\Users\Paulo\Documents\GitHub\Sistema-de-Busca-Vetorial\obj\Debug\Sistema_Busca_Vetorial.Form1.resources
+C:\Users\Paulo\Documents\GitHub\Sistema-de-Busca-Vetorial\obj\Debug\Sistema_Busca_Vetorial.Properties.Resources.resources
+C:\Users\Paulo\Documents\GitHub\Sistema-de-Busca-Vetorial\obj\Debug\Sistema-Busca-Vetorial.csproj.GenerateResource.cache
+C:\Users\Paulo\Documents\GitHub\Sistema-de-Busca-Vetorial\obj\Debug\Sistema-Busca-Vetorial.csproj.CoreCompileInputs.cache
+C:\Users\Paulo\Documents\GitHub\Sistema-de-Busca-Vetorial\obj\Debug\Sistema-Busca-Vetorial.exe
+C:\Users\Paulo\Documents\GitHub\Sistema-de-Busca-Vetorial\obj\Debug\Sistema-Busca-Vetorial.pdb
